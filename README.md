@@ -16,15 +16,15 @@ This project is built using a professional 3-tier architecture: Controller, Serv
 
 ### 1. Prerequisites
 
-* Java 17 or later installed.
+* Java 21 or later installed.
 * Maven installed.
 * MySQL Server running.
 
 ### 2. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone https://github.com/azmisaud/URLShortener.git
+cd URLShortener
 ```
 
 ### 3. Configure the Database
@@ -88,11 +88,11 @@ This API was tested using **Postman**. Here’s how you can test the endpoints:
 2.  **URL**: `http://localhost:8080/api/v1/shorten`
 3.  **Headers**:
     * `Content-Type`: `application/json`
-4.  **Body**: Go to the `Body` tab, select `raw`, and choose `JSON`. Enter the following:
+4.  **Body**: Go to the `Body` tab, select `raw`, Enter the following:
 
     ```json
     {
-        "longUrl": "[https://www.geeksforgeeks.org/introduction-to-spring-boot/](https://www.geeksforgeeks.org/introduction-to-spring-boot/)"
+        "longUrl": "https://www.geeksforgeeks.org/introduction-to-spring-boot/"
     }
     ```
 
@@ -106,4 +106,4 @@ This API was tested using **Postman**. Here’s how you can test the endpoints:
 1.  **Copy** the short URL from the response of the previous test (e.g., `http://localhost:8080/fG7hTz1`).
 2.  **Open your web browser** (Chrome, Firefox, etc.).
 3.  **Paste** the short URL into the address bar and press Enter.
-4.  **Expected Result**: The browser should instantly redirect you to the original long URL (`https://www.geeksforgeeks.org/introduction-to-spring-boot/`).
+4.  **Expected Result**: The browser should instantly redirect you to the original long URL.
